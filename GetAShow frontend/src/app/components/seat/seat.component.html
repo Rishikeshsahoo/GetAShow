@@ -1,0 +1,15 @@
+<ng-container *ngIf="seat !== '-1';else second">
+  <div  style="background-color: #ececec; color: whitesmoke;">
+  {{idx}}
+</div>
+</ng-container>
+<ng-template #second>
+  <div  [style.backgroundColor]="(isActive)?'green':''"
+  [style.color]="(isActive)?'white':''"
+  
+    (click)="handleClick()" >
+    {{idx}}
+  </div>
+</ng-template>
+
+

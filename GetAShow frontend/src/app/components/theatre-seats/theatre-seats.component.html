@@ -1,0 +1,41 @@
+<div class="container">
+  <!-- ngFor -->
+  <!-- <div className='seat' (click)={(e) => seatsBooked(idx+1)}><Seat idx={idx}/></div> -->
+  
+
+  <ng-container *ngIf="setted==='nine'; else second">
+
+    <div
+    class="seat"
+    *ngFor="let seat of nine;index as idx"
+    (click)="seatsBooked(seat,idx)"
+  >
+    <app-seat [idx]="idx" [seat]="seat"></app-seat>
+  </div>
+
+  </ng-container>
+  <ng-template #second>
+    <ng-container *ngIf="setted==='ten'; else third">
+
+        <div
+    class="seat"
+    *ngFor="let seat of ten;index as idx"
+    (click)="seatsBooked(seat,idx)"
+  >
+    <app-seat [idx]="idx" [seat]="seat"></app-seat>
+  </div>
+
+    </ng-container>
+  </ng-template>
+  <ng-template #third>
+
+    <div
+    class="seat"
+    *ngFor="let seat of twelve;index as idx"
+    (click)="seatsBooked(seat,idx)"
+  >
+    <app-seat [idx]="idx" [seat]="seat"></app-seat>
+  </div>
+
+  </ng-template>
+</div>

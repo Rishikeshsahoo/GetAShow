@@ -1,0 +1,21 @@
+<div class="list">
+    <div class="listTitle">Continue to watch</div>
+    <div class="wrapper">
+       
+        <i class="bi bi-caret-left-fill sliderArrow left" (click)="handleClick('left')" ></i>
+        <div class="container" #inputRef>
+            <!-- <app-list-item>inputRef</app-list-item>
+            <app-list-item index="0"></app-list-item>
+            <app-list-item index="1"></app-list-item>
+            <app-list-item index="2"></app-list-item>
+            <app-list-item index="3"></app-list-item>
+            <app-list-item index="4"></app-list-item>
+            <app-list-item index="5"></app-list-item>
+            <app-list-item index="6"></app-list-item>
+            <app-list-item index="7"></app-list-item> -->
+            <app-list-item  *ngFor="let movie of data" [movie]="movie"  ></app-list-item>
+
+        </div>
+        <i (click)="handleClick('right')" class="bi bi-caret-right-fill sliderArrow right "></i>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div style="margin-left: 140px;  margin-top:80px ;" class="outerpatti">
+    <h3>PVR Pacific Mall</h3>
+</div>
+<div style=" margin: auto; padding: 20px; background-color: #F5F5FA; margin-top: 10px; display: flex; justify-content: space-around;" class="patti">
+    <button (click)="selectTime('nine')" class="btn" [class.btn-success]="setted==='nine'" [class.btn-outline-success]="setted!=='nine'">9:00 am</button>
+
+    <button (click)="selectTime('ten')"  class="btn" [class.btn-success]="setted==='ten'" [class.btn-outline-success]="setted!=='ten'">10:00 am</button>
+
+    <button (click)="selectTime('twelve')"  class="btn" [class.btn-success]="setted==='twelve'" [class.btn-outline-success]="setted!=='twelve'">12:00 pm</button>
+
+    <button (click)="handleSubmit()"  class="btn btn-primary" >Submit</button>
+
+</div>
+<div style="margin-top: 20px;">
+   
+    <app-theatre-seats (eventEmmiter)="setTheSet($event)" [setted]="setted" [title]="state.title" ></app-theatre-seats>
+
+</div>
+<div style="display: flex; justify-content: center;">
+
+    <hr style="width: 30%; position: absolute; bottom: 30px;"/>
+    <p style=" position: absolute; bottom: 5px;">SCREEN HERE</p>
+</div>
+    
+    

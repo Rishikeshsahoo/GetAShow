@@ -1,0 +1,28 @@
+<div
+class="listItem"
+(mouseenter)="isHovered=true"
+(mouseleave)="isHovered=false"
+
+>
+<img
+  src={{movie.cardURL}}
+  alt=""
+/>
+<h4 color="white">{{movie.title}}</h4>
+
+  
+    <div class="itemInfo">
+      <button (click)="onClick()" class="btn btn-primary btn-sm" >Book Now</button><br>
+      <div class="itemInfoTop">
+        <span>1 hour 14 mins</span>
+        <span class="limit">+16</span>
+        <span>1999</span>
+      </div>
+      <div class="desc">
+        {{movie.description}}
+      </div>
+      <div class="genre">Action</div>
+    </div>
+  
+
+</div>

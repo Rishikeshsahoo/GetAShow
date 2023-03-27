@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    height: 50%;
+    width: 60%;
+    margin: auto;
+  }
+  .seat{
+    text-align:center;
+    border:1px solid grey;
+    width : 2rem;
+    height : 1.7rem;
+    margin:6px;
+    display: inline-block;
+    font-size: 10px;
+    line-height: 25px;
+    font-weight: 400;
+    background: #fff;
+    vertical-align: top;
+    color: #1ea83c;
+    border: 1px solid #1ea83c;
+    /* padding-top:12px; */
+    font-size: small;
+    border-radius: 5px;
+  }
+  .seat:hover{
+    background-color: #1ea83c;
+    color: #fff;
+    border-radius: 5px;
+
+  }
+  

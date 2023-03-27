@@ -1,0 +1,20 @@
+<div >
+<app-movie-info-banner  ></app-movie-info-banner>
+<div style="width: 60%; margin-left: 200px; margin-top: 70px;">
+<h3>About The Movie</h3>
+<p style="padding: 30px 0 30px 0;">Set more than a decade after the events of the first film, "Avatar The Way of Water" begins to tell the story of the Sully family (Jake, Neytiri and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive and the tragedies they endure.</p>
+<hr style="color:rgb(94, 81, 81)">
+<h3>Cast</h3>
+<div style="display: flex; flex-direction: row;">
+
+    <app-circle-crew *ngFor="let cast of state.cast" [state]="cast" ></app-circle-crew>
+</div>
+<hr style="color:rgb(94, 81, 81)">
+<h3>Crew</h3>
+<div style="display: flex; flex-direction: row;">
+
+    <app-circle-crew *ngFor="let cast of state.cast" [state]="cast" ></app-circle-crew>
+</div>
+<hr style="color:rgb(94, 81, 81)">
+</div>
+</div>
